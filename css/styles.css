@@ -687,7 +687,7 @@ img {
   color: var(--white-text-color);
   background-color: var(--akcent-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12)
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   display: block;
 }
 
@@ -759,7 +759,7 @@ img {
   color: var(--akcent-text-color);
 }
 
-/* Соцсети */
+/* ------------------- Соцсети ------------------- */
 .footer-socials {
   margin-top: 12px;
   margin-left: 70px;
@@ -812,7 +812,83 @@ img {
   background-color: var(--akcent-text-color);
 }
 
-/* Modal */
+/*------------------- Рассылка ------------------- */
+.email {
+  margin-top: 12px;
+  margin-left: 85px;
+}
+
+.email-title {
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-text-color);
+}
+
+.email-form {
+  display: flex;
+}
+
+.email-input {
+  display: flex;
+  min-width: 358px;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: var(--white-text-color);
+
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.btn-submit {
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  margin-top: 20px;
+  padding: 10px 28px;
+  min-width: 200px;
+
+  margin-left: 12px;
+
+  /* Типографика */
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+
+  text-align: left;
+
+  /* Отображение */
+  border: 0;
+  border-radius: 4px;
+  background-color: var(--akcent-text-color);
+  color: var(--white-text-color);
+}
+
+.btn-send-icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+
+  fill: var(--white-text-color);
+}
+
+/* ====================== Modal ====================== */
 .backdrop {
   position: fixed;
   height: 100vh;
@@ -852,7 +928,6 @@ img {
   background-color: unset;
   border-radius: 50%;
   cursor: pointer;
-  
 }
 
 .btn-icon {
