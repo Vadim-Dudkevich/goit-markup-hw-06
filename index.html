@@ -508,9 +508,24 @@
                     </span>
                 </div>
                 <div class="modal-form-field">
-                    <label for="imput-comment" class="modal-form-label">Комментарий</label>
+                    <label for="modal-comment" class="modal-form-label">Комментарий</label>
                     <textarea name="comment" id="modal-comment" placeholder="Введите текст" class="modal-comment"></textarea>
                 </div>
+                <div class="modal-form-field">
+                    <input type="checkbox" id="check" class="checkbox visually-hidden" name="policy">
+                    <label for="check" class="modal-check-label">
+                        <span class="icon-check">
+                            <svg class="" width="11" height="8">
+                                <use href="./images/sprite.svg#icon-check"></use>
+                            </svg>
+                        </span>
+                        <span>Соглашаюсь с рассылкой и принимаю
+                            <a href="" class="check-text">Условия договора</a>
+                        </span>
+                    </label>
+                </div>
+                <button class="form-btn" type="submit">Отправить</button>
+            </form> 
         </div>
     </div>
     <script src="./js/modal.js"></script>
