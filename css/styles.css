@@ -3,14 +3,6 @@
 /* Цвет актента текста, кнопка #2196f3 */
 /* Белый цвет текста #ffffff */
 
-/* Позиционирование */
-
-/* Блочная модель */
-
-/* Типографика */
-
-/* Отображение */
-
 :root {
   --first-text-color: #757575;
   --second-text-color: #212121;
@@ -46,10 +38,6 @@ img {
   height: auto;
 }
 
-/* .list {
-  list-style: none;
-} */
-
 .link {
   text-decoration: none;
 }
@@ -82,7 +70,7 @@ img {
   display: flex;
 }
 
-/* Line */
+/* ---------------- Line ---------------- */
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -136,10 +124,6 @@ img {
 
   /* Отображение */
   color: var(--second-text-color);
-
-  /* transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -247,8 +231,6 @@ img {
   /* Позиционирование */
   margin-bottom: 30px;
 
-  /* Блочная модель */
-
   /* Типографика */
   font-weight: 900;
   font-size: 44px;
@@ -302,7 +284,6 @@ img {
 }
 
 .features-item {
-  /* Блочная модель */
   width: 270px;
 }
 
@@ -705,7 +686,11 @@ img {
 }
 
 .footer-container {
+  align-items: baseline;
   display: flex;
+}
+.address-logo {
+  flex-grow: 1;
 }
 
 .footer-logo {
@@ -766,7 +751,6 @@ img {
 
 /* ------------------- Соцсети ------------------- */
 .footer-socials {
-  margin-top: 12px;
   margin-left: 70px;
 }
 
@@ -820,8 +804,8 @@ img {
 
 /*------------------- Рассылка ------------------- */
 .email {
-  margin-top: 12px;
-  margin-left: auto;
+  /* margin-top: 12px; */
+  margin-left: 93px;
 }
 
 .email-title {
@@ -835,6 +819,7 @@ img {
 }
 
 .email-form {
+  align-items: baseline;
   display: flex;
 }
 
@@ -851,7 +836,7 @@ img {
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
-  color: var(--white-text-color);
+  color: var(--first-text-color);
 
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -860,10 +845,11 @@ img {
 }
 
 .btn-submit {
-  position: relative;
-  margin-top: 20px;
+  display: flex;
+  align-content: center;
   padding: 10px 28px;
   min-width: 200px;
+  height: 50px;
 
   margin-left: 12px;
 
@@ -883,9 +869,7 @@ img {
 }
 
 .btn-send-icon {
-  position: absolute;
-  top: 13px;
-  right: 28px;
+  margin-left: 10px;
 
   fill: var(--white-text-color);
 }
@@ -936,11 +920,6 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn:hover,
-.btn:focus {
-  fill: var(--akcent-text-color);
-}
-
 .btn:hover .btn-icon,
 .btn:focus .btn-icon {
   fill: var(--akcent-text-color);
@@ -969,9 +948,8 @@ img {
 .modal-form {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
+
+  padding: 40px;
 
   font-size: 12px;
   line-height: 1.17;
@@ -983,8 +961,12 @@ img {
 }
 
 .modal-form-field:nth-child(6) {
-  margin-top: 10px;
+  margin-top: 0;
   margin-bottom: 0;
+}
+
+.modal-form-field:nth-child(5) {
+  margin-bottom: 20px;
 }
 
 .modal-form-label {
@@ -1010,6 +992,10 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-form-field:focus-within {
+  color: var(--akcent-text-color);
+}
+
 .modal-form-imput:focus + .modal-form-icon,
 .modal-form-imput:focus {
   outline: none;
@@ -1026,6 +1012,7 @@ img {
 }
 
 .modal-comment {
+  display: block;
   width: 100%;
   height: 120px;
 
@@ -1053,6 +1040,7 @@ img {
 }
 
 .modal-check-label {
+  justify-content: center;
   display: flex;
   align-items: center;
 }
@@ -1072,7 +1060,7 @@ img {
   margin-right: 7px;
 
   border: 2px solid #000000;
-  border-radius: 2px;
+  border-radius: 4px;
 
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
